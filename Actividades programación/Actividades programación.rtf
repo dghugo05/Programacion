@@ -1,0 +1,219 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang3082{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang10 1.Escribe un programa que pida el nombre, los apellidos y el sexo y muestre en la salida: Bienvenido, Sr./Sra. \ldblquote Nombre y apellidos\rdblquote\par
+\par
+Algoritmo Ficha\par
+\tab Definir Nombre, Apellido, Sexo Como cadena\par
+\tab Escribir "Introduzca su Nombre"\par
+\tab leer Nombre\tab\par
+\tab nombre = Nombre\par
+\tab Escribir "Introduzca sus Apellidos"\par
+\tab leer Apellidos\par
+\tab Apellido = Apellidos\par
+\tab escribir "Introduzca su Sexo"\par
+\tab leer Sexo\par
+\tab sexo = Sexo\par
+\tab Si minusculas(sexo) = "hombre" o minusculas(sexo) =  "varon" Entonces\par
+\tab\tab Escribir "Bienvenido, Sr" + " " + nombre + " " + Apellido\par
+\tab SiNo\par
+\tab\tab Escribir "Bienvenido Srt" + " " + nombre + " " + Apellido\par
+\tab Fin Si\par
+FinAlgoritmo\par
+\par
+2.Escribe un programa que determine si el n\'famero introducido es positivo o negativo\par
+Algoritmo diferencia_num\par
+\tab definir num Como real\par
+\tab escribir "Introduzca un n\'famero"\par
+\tab leer numero\par
+\tab num = numero\par
+\tab Si numero < 0 Entonces\par
+\tab\tab escribir "El n\'famero introducido es negativo"\par
+\tab SiNo\par
+\tab\tab si numero >= 0 entonces\par
+\tab\tab escribir "El n\'famero es positivo"\par
+\tab\tab fin si\par
+\tab Fin Si\par
+FinAlgoritmo\par
+3.Escribe un programa que determine si el n\'famero introducido tiene 3 d\'edgitos o no.\par
+Algoritmo longi\par
+\tab definir num Como entero\par
+\tab escribir "Escriba un n\'famero"\par
+\tab leer numero\par
+\tab numero = numero\par
+\tab si numero >= 100 y numero <= 999 Entonces\par
+\tab\tab escribir "El n\'famero introducido contiene tres d\'edgitos"\par
+\tab sino escribir "El n\'famero introducido contiene m\'e1s de tres o digitos o menos"\par
+\tab FinSi\par
+FinAlgoritmo\par
+4.Escribe un programa que pida 2 n\'fameros e indique si el primero es m\'faltiplo del segundo.\par
+Algoritmo multip\par
+\tab definir num_1, num_2 Como Entero\par
+\tab escribir "Introduzca un primer n\'famero"\par
+\tab leer numero\par
+\tab num_1 = numero\par
+\tab escribir "Introduzca el segundo n\'famero"\par
+\tab leer numero\par
+\tab num_2 = numero\par
+\tab si num_1 % num_2 = 0 Entonces\par
+\tab\tab escribir "El primer n\'famero es m\'faltiplo del segundo"\par
+\tab sino escribir "El primer n\'famero no es m\'faltiplo del segundo"\par
+\tab FinSi\par
+FinAlgoritmo\par
+5.Escribe un programa que determine si el n\'famero introducido termina en 0 (positivo o negativo)\par
+Algoritmo termina\par
+\tab definir n\'famero Como Entero\par
+\tab Escribir "Introduzca un n\'famero"\par
+\tab leer numero\par
+\tab num = numero\par
+\tab si numero mod 10 = 0 entonces\par
+\tab\tab escribir "El n\'famero acaba en 0"\par
+\tab sino escribir "El n\'famero no termina en 0"\par
+\tab FinSi\par
+FinAlgoritmo\par
+6.Escribe un programa que pida 2 n\'fameros y a continuaci\'f3n la operaci\'f3n a realizar (1. suma, 2. resta, 3. multiplicaci\'f3n, 4. divisi\'f3n). El programa debe devolver el resultado de la operaci\'f3n indicada.\par
+Algoritmo calcula\par
+\tab definir num1, num2 Como entero\par
+\tab escribir "Ingrese un primer n\'famero"\par
+\tab leer numero\par
+\tab num1 = numero\par
+\tab escribir "Ingrese un segundo n\'famero"\par
+\tab leer numero\par
+\tab num2 =n umero\par
+\tab escribir "Seleccione una operaci\'f3n"\par
+\tab Escribir "1. Sumar"\par
+\tab Escribir "2. Restar"\par
+\tab Escribir "3. Multiplicai\'f3n"\par
+\tab Escribir "4. Divisi\'f3n"\par
+\tab leer operacion\par
+\tab oper = operacion\par
+\tab si operacion = "1" Entonces\par
+\tab\tab resultado = num1 + num2\par
+\tab\tab Escribir "La suma es: ", resultado\par
+\tab FinSi\par
+\tab si operacion = "2" Entonces\par
+\tab\tab resultado = num1 - num2\par
+\tab\tab Escribir "La resta es: ", resultado\par
+\tab FinSi\par
+\tab si operacion = "3" Entonces\par
+\tab\tab resultado =  num1 * num2\par
+\tab\tab Escribir "La multiplicaci\'f3n es: ", resultado\par
+\tab FinSi\par
+\tab si operacion = "4" Entonces\par
+\tab\tab resultado = num1 / num2\par
+\tab\tab Escribir "La divisi\'f3n es: ", resultado\par
+\tab FinSi\par
+FinAlgoritmo\par
+7.Escribe un programa que pida la altura y el peso y muestre el imc de esa persona: {{\field{\*\fldinst{HYPERLINK https://www.texasheart.org/heart-health/heart-information-center/topics/calculadora-del-indice-de-masa-corporal-imc/ }}{\fldrslt{https://www.texasheart.org/heart-health/heart-information-center/topics/calculadora-del-indice-de-masa-corporal-imc/\ul0\cf0}}}}\f0\fs22\par
+Algoritmo Imc\par
+\tab definir numero como entero\par
+\tab escribir "Escriba su peso en kilogramos"\par
+\tab leer Kg\par
+\tab peso = Kg\par
+\tab escribir "Escriba su altura en cent\'edmetros"\par
+\tab leer m\par
+\tab altura = m/100\par
+\tab calculo = peso / (altura * altura)\par
+\tab redondeo = (calculo)\par
+\tab escribir "Su IMC es ", calculo\par
+FinAlgoritmo\par
+8.Escribe un programa que determine si el n\'famero introducido termina en 5 (positivo o negativo)\par
+Algoritmo calculo\par
+\tab definir numero Como Entero\par
+\tab escribir"Introduzca un n\'famero"\par
+\tab leer numero\par
+\tab num = numero\par
+\tab si num mod 5 = 0  Entonces\par
+\tab\tab num = num\par
+\tab\tab si num mod 10 = 0 Entonces\par
+\tab\tab\tab escribir "Su n\'famero no contiene 5"\par
+\tab\tab sino escribir "Su n\'famero contiene 5"\par
+\tab\tab\tab num = num\par
+\tab\tab FinSi\par
+\tab FinSi\par
+\tab si num >= 0 Entonces\par
+\tab\tab escribir "Su n\'famero es positivo"\par
+\tab sino escribir "Su n\'famero es negativo"\par
+\tab FinSi\par
+\tab\par
+FinAlgoritmo\par
+9.Escribe un programa que pida 3 n\'fameros y los muestre de menor a mayor.\par
+Algoritmo ordenar\par
+\tab definir num Como Entero\par
+\tab escribir "Introduzca 3 numeros"\par
+\tab leer num1\par
+\tab leer num2\par
+\tab leer num3\par
+\tab num1 = num1\par
+\tab num2 = num2\par
+\tab num3 = num3\par
+\tab si num1 > num2 Entonces\par
+\tab\tab si num1 > num3 entonces\par
+\tab\tab\tab si num2 > num3 Entonces\par
+\tab\tab\tab\tab escribir "N\'fameros del m\'e1s grande al m\'e1s peque\'f1o: " + num1 + " " + num2 + " " + num3\par
+\tab\tab\tab sino escribir "N\'fameros del m\'e1s grande al m\'e1s peque\'f1o: " + num1 + " " num3 + " " num2\par
+\tab\tab\tab FinSi\par
+\tab\tab\tab\par
+\tab\tab FinSi\par
+\tab FinSi\par
+\tab\par
+\tab si num2 > num3 Entonces\par
+\tab\tab si num2 > num1 Entonces\par
+\tab\tab\tab si num3 > num2 Entonces\par
+\tab\tab\tab\tab escribir "N\'fameros del m\'e1s grande al m\'e1s peque\'f1o: " + num2 + " " num3 + " " num1\par
+\tab\tab\tab SiNo escribir "N\'fameros del m\'e1s grande al m\'e1s peque\'f1o: " + num2 + " " num1 + " " num3\par
+\tab\tab\tab\tab\par
+\tab\tab\tab FinSi\par
+\tab\tab FinSi\par
+\tab FinSi\par
+\tab si num3 > num1 Entonces\par
+\tab\tab si num3 > num2 Entonces\par
+\tab\tab\tab si num1 > num2 Entonces\par
+\tab\tab\tab\tab escribir "N\'fameros del m\'e1s grande al m\'e1s peque\'f1o: " + num3 + " " num1 + " " num2\par
+\tab\tab\tab sino escribir "N\'fameros del m\'e1s grande al m\'e1s peque\'f1o: " + num3 + " " + num2 + " " + num1\par
+\tab\tab\tab FinSi\par
+\tab\tab FinSi\par
+\tab FinSi\par
+FinAlgoritmo\par
+10.Escribe un programa que calcule el aumento al sueldo de un empleado; si el sueldo es mayor a 500.000\'80 su aumento ser\'e1 del 12%, pero si su sueldo es menor, el aumento ser\'e1 del 15%.\par
+Algoritmo raise\par
+\tab definir numero Como Logico\par
+\tab escribir "Escriba su sueldo"\par
+\tab leer num\par
+\tab sueldo = num\par
+\tab si num > 500000 entonces\par
+\tab\tab num_1 = (num*12)/100\par
+\tab\tab num_1 = num_1 + num\par
+\tab\tab Escribir "Este ser\'e1 su nuevo sueldo ", num_1\par
+\tab sino num_1 = (num*15)/100\par
+\tab\tab num_1 = num_1 + num\par
+\tab\tab escribir "Este ser\'e1 su nuevo sueldo ", num_1\par
+\tab FinSi\par
+FinAlgoritmo\par
+11.Escribe un programa que calcule el precio total de la compra de zapatos para una tienda que tiene una promoci\'f3n de descuento para vender al por mayor, esta depender\'e1 del n\'famero de zapatos que se compren. Si son m\'e1s de diez, se les dar\'e1 un 10% de descuento sobre el total de la compra; si el n\'famero de zapatos es mayor de veinte pero menor de treinta, se le otorga un 20% de descuento; y si son m\'e1s treinta zapatos se otorgar\'e1 un 40% de descuento. El precio de cada zapato es de 80\'80.\par
+Algoritmo zapatos\par
+\tab definir numero Como Real\par
+\tab escribir "Cu\'e1ntos zapatos desea encargar"\par
+\tab leer num_z\par
+\tab num_z = num_z\par
+\tab precio = num_z*80\par
+\tab si num_z >= 10 y num_z < 20 Entonces\par
+\tab\tab precio = precio - ((precio * 10) / 100)\par
+\tab\tab escribir "El precio total es de ", precio\par
+\tab FinSi\par
+\tab si num_z >= 20 y num_z < 30 Entonces\par
+\tab\tab precio = precio - ((precio * 20) / 100)\par
+\tab\tab escribir "El precio total es de ", precio\par
+\tab FinSi\par
+\tab si num_z > 30 Entonces\par
+\tab\tab precio = precio - ((precio * 40) / 100)\par
+\tab\tab escribir "El precio total es de", precio\par
+\tab FinSi\par
+FinAlgoritmo\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
