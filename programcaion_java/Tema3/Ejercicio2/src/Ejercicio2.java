@@ -4,7 +4,7 @@ public class Ejercicio2 {
         Scanner s = new Scanner(System.in);
         System.out.println("Introduzca el número de euros que desea convertir a pesetas: ");
         double euros = s.nextDouble();
-        System.out.println(euros * 166.386);
+        System.out.printf("%.0f", euros * 166.386);
         s.close();
     }
 }
