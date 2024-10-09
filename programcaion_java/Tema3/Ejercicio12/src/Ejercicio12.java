@@ -8,7 +8,7 @@ public class Ejercicio12 {
         double trim = s.nextDouble();
         double primer = nota * 0.4;
         double segun = (trim - primer)/0.6;
-        System.out.println(segun);
+        System.out.printf("Para tener un %.1f en el trimestre necesita sacar un %.1f en el segundo examen.", trim, segun);
         s.close();
     }
 }
