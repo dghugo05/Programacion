@@ -7,8 +7,7 @@ public class App {
         int [] num = new int[10];
 
         for(int paso = 0; paso < 10; paso++){
-            int numero = s.nextInt();
-            num[paso] = numero;
+            num[paso]= s.nextInt();
         }
 
         for(int paso = 9; paso >= 0; paso--){
