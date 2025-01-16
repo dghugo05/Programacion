@@ -21,6 +21,7 @@ public class App {
             }
             System.out.printf(numeros[paso] + " ");
         }
+        s.close();
     }
 
     public static boolean esPar(int num){
