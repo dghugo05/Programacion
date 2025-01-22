@@ -89,12 +89,21 @@ public class GestionDispositivos{
         }
     }
 
+    public void apagarDispositivos(){
+        for(Dispositivo disp:dispositivos){
+            ((Encendible)disp).apagar();
+            System.out.println(disp);
+        }
+        System.out.printf("Cantidad de dispositivos guardados: ", dispositivos.length);
+    }
+
     public void mostrarComputadora(){
         for(Dispositivo disp:dispositivos){
             if(disp instanceof Computadora){
                 System.out.println(disp);
             }
         }
+        System.out.printf("Cantidad de dispositivos guardados: ", dispositivos.length);
     }
 
     public void mostrarTelevisor(){
@@ -103,5 +112,6 @@ public class GestionDispositivos{
                 System.out.println(disp);
             }
         }
+        System.out.printf("Cantidad de dispositivos guardados: ", dispositivos.length);
     }
 }
