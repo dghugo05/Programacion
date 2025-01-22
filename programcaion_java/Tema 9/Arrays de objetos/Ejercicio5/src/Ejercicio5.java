@@ -4,5 +4,8 @@ public class Ejercicio5 {
 
         gestor.agregarProducto();
         gestor.mostrarProductos();
+        
+        gestor.quitarProducto();
+        gestor.mostrarProductos();
     }
 }

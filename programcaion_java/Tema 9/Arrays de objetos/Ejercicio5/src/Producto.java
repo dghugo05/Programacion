@@ -1,19 +1,14 @@
 public class Producto {
     private int stock;
     private double precio_Compra, precio_Venta;
-    private String descripcion, vacio, codigo;
+    private String descripcion, codigo;
 
-    public Producto(String descripcion, String codigo, double precio_Compra, double precio_Venta, int stock) {
+    public Producto(String codigo, String descripcion, double precio_Compra, double precio_Venta, int stock) {
         this.descripcion = descripcion;
         this.codigo = codigo;
-        this.vacio = "si";
         this.precio_Compra = precio_Compra;
         this.precio_Venta = precio_Venta;
         this.stock = stock;
-    }
-
-    public Producto(String vacio){
-        this.vacio = "si";
     }
 
     public String getDescripcion(){
@@ -22,14 +17,6 @@ public class Producto {
 
     public void setDescripcion(String descripcion){
         this.descripcion = descripcion;
-    }
-
-    public String getvacio(){
-        return this.vacio;
-    }
-
-    public void setvacio(String vacio){
-        this.vacio = vacio;
     }
 
     public String getCodigo(){
@@ -65,6 +52,6 @@ public class Producto {
     }
 
     public String toString(){
-        return "Descripción: " + descripcion + "código: " + codigo + "precio de compra: " + precio_Compra + "precio de venta" + precio_Venta + "stock: " + stock;
+        return " código: " + codigo + " Descripción: " + descripcion +  " precio de compra: " + precio_Compra + " precio de venta" + precio_Venta + "stock: " + stock;
     }
 }
