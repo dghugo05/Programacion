@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class GestionDispositivos{
     private Dispositivo [] dispositivos;
     private Dispositivo [] aux_Dispositivos;
-    private int cantidadDispositivos = 0;
 
     public GestionDispositivos(){
         dispositivos = new Dispositivo[0];
@@ -38,8 +37,7 @@ public class GestionDispositivos{
             System.out.printf("1. Computadora\n");
             System.out.printf("2. Televisor\n");
             seleccion = pedirEntero();
-            selection(seleccion, cantidadDispositivos);
-            cantidadDispositivos++;
+            selection(seleccion, Dispositivo.getContadorDispositivo());
         }
         s.close();
         
@@ -83,33 +81,33 @@ public class GestionDispositivos{
     }
 
     public void mostrarDispositivos(){
-        for(Dispositivo disp:dispositivos){
-            ((Encendible)disp).encender();
-            System.out.println(disp);
+        for(int paso = 0; paso < Dispositivo.getContadorDispositivo(); paso++){
+            ((Encendible)dispositivos[paso]).encender();
+            System.out.println(dispositivos[0]);
         }
     }
 
     public void apagarDispositivos(){
-        for(Dispositivo disp:dispositivos){
-            ((Encendible)disp).apagar();
-            System.out.println(disp);
+        for(int paso = 0; paso < Dispositivo.getContadorDispositivo(); paso++){
+            ((Encendible)dispositivos[paso]).apagar();
+            System.out.println(dispositivos[paso]);
         }
         System.out.printf("Cantidad de dispositivos guardados: ", dispositivos.length);
     }
 
     public void mostrarComputadora(){
-        for(Dispositivo disp:dispositivos){
-            if(disp instanceof Computadora){
-                System.out.println(disp);
+        for(int paso = 0; paso < Dispositivo.getContadorDispositivo(); paso++){
+            if(dispositivos[0] instanceof Computadora){
+                System.out.println(dispositivos[0]);
             }
         }
         System.out.printf("Cantidad de dispositivos guardados: ", dispositivos.length);
     }
 
     public void mostrarTelevisor(){
-        for(Dispositivo disp:dispositivos){
-            if(disp instanceof Televisor){
-                System.out.println(disp);
+        for(int paso = 0; paso < Dispositivo.getContadorDispositivo(); paso++){
+            if(dispositivos[0] instanceof Televisor){
+                System.out.println(dispositivos[0]);
             }
         }
         System.out.printf("Cantidad de dispositivos guardados: ", dispositivos.length);

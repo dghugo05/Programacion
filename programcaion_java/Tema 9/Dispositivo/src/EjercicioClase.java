@@ -2,11 +2,10 @@ import java.util.Scanner;
 
 public class EjercicioClase {
     public static void main(String[] args) throws Exception {
-
-
+        menu();
     }
 
-    public void menu(){
+    public static void menu(){
         Scanner s = new Scanner(System.in);
         System.out.println( "1. Agregar dispositivo");
         System.out.println( "2. Mostrar dispositivos");
@@ -15,11 +14,11 @@ public class EjercicioClase {
         System.out.println( "5. Salir");
         System.out.printf("Ingrese una opción: ");
         int opcion = pedirEntero();
-
+        selection(opcion);
         s.close();
     }
 
-    private void selection(int select){
+    private static void selection(int select){
         GestionDispositivos gestion = new GestionDispositivos();
         switch (select) {
             case 1:
@@ -41,7 +40,7 @@ public class EjercicioClase {
         }
     }
 
-    private int pedirEntero(){
+    private static int pedirEntero(){
         Scanner s = new Scanner(System.in);
         int entero = 0;
         boolean bandera = true;
@@ -57,6 +56,6 @@ public class EjercicioClase {
         return entero;
     }
 
-    public void exit(){
+    public static void exit(){
     }
 }

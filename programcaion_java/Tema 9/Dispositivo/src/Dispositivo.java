@@ -7,7 +7,7 @@ public abstract class Dispositivo {
         contadorDispositivo++;
     }
 
-    public Dispositivo (){
+    public Dispositivo (){ 
     }
 
     public static int getContadorDispositivo() {
